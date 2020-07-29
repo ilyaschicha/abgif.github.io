@@ -10,7 +10,7 @@ let btn = document.getElementById("btn");
 inputS.addEventListener('keydown', (e) => {
     if (e.keyCode == 13) {
         let input = document.querySelector("input").value;
-        let url = "http://api.giphy.com/v1/gifs/search?q=" + input.replace(" ", "+") + "&api_key=dc6zaTOxFJmzC";
+        let url = "https://api.giphy.com/v1/gifs/search?q=" + input.replace(" ", "+") + "&api_key=dc6zaTOxFJmzC";
         GiphyAJAXCall.open('GET', url);
         GiphyAJAXCall.send();
     }
@@ -19,7 +19,7 @@ inputS.addEventListener('keydown', (e) => {
 
 btn.addEventListener('click', () => {
     let input = document.querySelector("input").value;
-    let url = "http://api.giphy.com/v1/gifs/search?q=" + input.replace(" ", "+") + "&api_key=dc6zaTOxFJmzC";
+    let url = "https://api.giphy.com/v1/gifs/search?q=" + input.replace(" ", "+") + "&api_key=dc6zaTOxFJmzC";
     GiphyAJAXCall.open('GET', url);
     GiphyAJAXCall.send();
 });
